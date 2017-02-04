@@ -1,88 +1,13 @@
-<!DOCTYPE html>
-<html >
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-      body {
-        font-family: sans-serif;
-      }
-
-      a {
-        font-family: sans-serif;
-        color: black;
-        display: inline-block;
-        padding: 10px 10px 8px 10px;
-        margin: 5px;
-        border: 3px solid DarkGrey;
-        text-decoration: none;
-      }
-
-      a:hover { background-color: LightGrey; }
-
-      hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-    </style>
+    <title>charlieegan3</title>
     <script>
-      var entered = "";
-
-      document.onkeydown = function(e) {
-        var e = e || window.event;
-        if (e.keyCode == 32 || e.keyCode == 27 || e.keyCode == 8) {
-          entered = "";
-        } else {
-          var chr = String.fromCharCode(e.keyCode).toLowerCase();
-          if (chr.match(/[a-z0-9]/))
-            entered += chr;
-        }
-
-        document.getElementById("entered").innerHTML = entered;
-
-        if (entered.length < 2)
-          return;
-
-        var links = document.links;
-        var matching = [];
-        for(var i = 0; i < links.length; i++) {
-          if (links[i].textContent.toLowerCase().startsWith(entered))
-            matching.push(links[i].href);
-        }
-        if (matching.length == 1) {
-          window.location = matching[0];
-        } else if (matching.length == 0) {
-          entered = "";
-        }
-      }
+      window.location = "https://charlieegan3.com"
     </script>
   </head>
-
   <body>
-    <p id="entered"></p>
-    <a style="border-color: CadetBlue;" href="https://my.1password.com/signin">1Password</a>
-    <a style="border-color: IndianRed;" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
-    <a style="border-color: YellowGreen;" href="https://github.com">GitHub</a>
-    <a style="border-color: CornflowerBlue;" href="https://www.dropbox.com/home">Dropbox</a>
-    <a style="border-color: BlueViolet;" href="https://dashboard.heroku.com/apps">Heroku</a>
-    <br/><hr/>
-    <a style="border-color: YellowGreen;" href="http://serializer.io">serializer</a>
-    <a style="border-color: LightGreen;" href="https://charlieegan3.github.io/filtered-hn-new-page/?comments=0&amp;points=2">HN New</a>
-    <a style="border-color: Plum;" href="https://charlieegan3-stringer.herokuapp.com">Stringer</a>
-    <a style="border-color: Orange;" href="https://hn.algolia.com/">HN Algolia</a>
-    <br/><hr/>
-    <a style="border-color: Plum;" href="https://charlieegan3-notebook.herokuapp.com">Notebook</a>
-    <a style="border-color: Plum;" href="https://charlieegan3-graph-notes.herokuapp.com">Bookmarks</a>
-    <a style="border-color: CornflowerBlue;" href="http://charlieegan3.com">charlieegan3</a>
-    <br/><hr/>
-    <a style="border-color: SteelBlue;" href="https://www.messenger.com/">Msngr</a> -
-    <a style="border-color: SeaGreen;" href="https://familyplace.slack.com/">Family</a>
-    <a style="border-color: SkyBlue;" href="https://threemen.slack.com/">3 Men</a>
-    <a style="border-color: Purple;" href="https://ubxd.slack.com/">UBXD</a>
-    <a style="border-color: DeepSkyBlue;" href="https://chargy.slack.com">chargy</a>
-    <a style="border-color: MediumVioletRed;" href="https://computationclub.slack.com">CC</a>
-    <br/><hr/>
-    <a style="border-color: IndianRed;" href="https://calendar.google.com/calendar">Calendar</a>
-    <a style="border-color: IndianRed;" href="https://mail.google.com/mail/u/0/#contacts">Contacts</a>
-    <a style="border-color: Plum;" href="http://twitter-roundup.herokuapp.com/">Twitter RSS</a>
+    <p>
+      You're looking for: <a href="http://charlieegan3.com">charlieegan3.com</a>
+    </p>
   </body>
 </html>
