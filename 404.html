@@ -1,0 +1,28 @@
+permalink: /404.html
+---
+<html>
+  <head>
+    <title>charlieegan3</title>
+    <script type="text/javascript">
+      var target = "https://charlieegan3.com" + window.location.pathname;
+      window.location.href = target;
+
+      function setLink() {
+        var link = document.getElementById("location");
+        if (link == null) {
+          setTimeout(setLink, 0);
+          return
+        }
+        link.href = target;
+        link.innerHTML = target;
+      }
+
+      setLink();
+    </script>
+  </head>
+  <body>
+    <p>
+      You're looking for: <a id="location" href="http://charlieegan3.com">charlieegan3.com</a>
+    </p>
+  </body>
+</html>
